@@ -17,5 +17,4 @@ export class RecipesComponent implements OnInit {
       (selectedRecipe:Recipe) => this.recipe = selectedRecipe
     )
   }
-
 }
