@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  showRecipes: boolean = true;
+
+  onNavigate(data:string){
+    if (data === 'recipes'){
+      this.showRecipes = true;
+    } else if (data === 'shopping-list'){
+      this.showRecipes = false;
+    }
+  }
 }
