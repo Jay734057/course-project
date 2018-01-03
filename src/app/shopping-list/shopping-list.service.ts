@@ -18,6 +18,5 @@ export class ShoppingListService{
         this.ingredientChanged.emit();
     }
 
-    ingredientAdded = new EventEmitter<Ingredient>();
     ingredientChanged = new EventEmitter();
 }

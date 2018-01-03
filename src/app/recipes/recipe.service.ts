@@ -34,6 +34,16 @@ export class RecipeService {
         return this.recipes.slice();
     }
     
+    getRecipe(index: number) {
+        // const recipe = this.recipes.find(
+        //     (s) => {
+        //       return s.id === id;
+        //     }
+        //   );
+        //   return recipe;
+        return this.recipes[index];
+    }
+    
     selectedRecipe = new EventEmitter<Recipe>();
 
     addNewIngredient(ingredients:Ingredient[]){
